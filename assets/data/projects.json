@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "Various Projects",
+      "description": "<li>Accruent TMS Modernization</li><li>New RESTful APIs for Legacy System</li><li>Accruent Asset Enterprise Stabilization and Decommission</li><li>Accruent Asset Enterprise Enhancements</li><li>Automated Microsoft Windows Build (LAN)</li>",
+      "link": "https://www.linkedin.com/in/markhoganinla/details/projects/"
+    },
+    {
+      "id": 2,
+      "name": "Advanced Logging Project",
+      "description": "The AdvancedLogging solution is a comprehensive logging framework designed to enhance the logging capabilities of C# and VB.NET applications.",
+      "link": "https://github.com/KrazKjn/AdvancedLogging",
+      "imageUrl": "https://media.licdn.com/dms/image/sync/v2/D5627AQGN9MZAUnM9mQ/articleshare-shrink_800/articleshare-shrink_800/0/1741725091016?e=1742688000&v=beta&t=gL74siM4lQid6f5N9OVY_Qb32FKxc-CS-Aja1Hb0-2E"
+    },
+    {
+      "id": 3,
+      "name": "Microsoft Graph API Examples",
+      "description": "Microsoft Graph API Examples",
+      "link": "https://github.com/KrazKjn/graph_api_examples",
+      "imageUrl": "https://media.licdn.com/dms/image/v2/D562DAQEAmINXkKkI0Q/profile-treasury-image-shrink_160_160/B56ZWG.5i9GoAk-/0/1741726390871?e=1742688000&v=beta&t=YNRBfnNYwSjnsqfchi4W2x5_SBKyeylAc8Wfqv_rBcg"
+    },
+    {
+      "id": 4,
+      "name": "Microsoft Blazor Examples",
+      "description": "Microsoft Blazor Examples",
+      "link": "https://github.com/KrazKjn/blazor_examples",
+      "imageUrl": "https://media.licdn.com/dms/image/v2/D562DAQG0LauGX4POQg/profile-treasury-image-shrink_480_480/B56ZWHBMUrHEAM-/0/1741726991982?e=1742688000&v=beta&t=4EHe3VD3uccxd4d72DJnnNbLjRezdW5MPlvain7gKSs"
+    },
+    {
+      "id": 5,
+      "name": "Miscellaneous PowerShell Examples",
+      "description": "Miscellaneous PowerShell Examples",
+      "link": "https://github.com/KrazKjn/powershell_examples",
+      "imageUrl": "https://media.licdn.com/dms/image/v2/D562DAQHgFBQ6LIrFSg/profile-treasury-image-shrink_160_160/B56ZWG9LCMGUAs-/0/1741725938215?e=1742688000&v=beta&t=FNvvLxmYFoAY27sb0gOvXYgdNcDVLq6Nigyn-bAECOE"
+    },
+    {
+      "id": 6,
+      "name": "Miscellaneous SMTP Examples",
+      "description": "Example SMTP PowerShell Scripts",
+      "link": "https://github.com/KrazKjn/smtp_examples",
+      "imageUrl": "https://media.licdn.com/dms/image/v2/D562DAQFDBpktNNg9Kg/profile-treasury-image-shrink_160_160/B56ZWLwXqQHoAo-/0/1741806468619?e=1742688000&v=beta&t=Nbdp1vv7HkoMAP3M37K1qyoHVdY5h7tjLYOwnqEL6ws"
+    }
+  ]
+  

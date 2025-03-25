@@ -5,7 +5,7 @@ import GitHubLink from '../../components/GitHubLink/GitHubLink';
 import DependenciesList from '../../components/DependenciesList/DependenciesList';
 
 const Version = () => {
-   
+
     return (
         <div className="container">
             <ResizableBackground />

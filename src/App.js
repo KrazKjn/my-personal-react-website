@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import HomePage from './pages/HomePage/HomePage';
 import AboutPage from './pages/AboutPage/AboutPage';
@@ -14,22 +14,22 @@ import ResumeManager from './pages/ResumeManager/ResumeManager';
 
 const App = () => {
     return (
-        <Router>
+        <BrowserRouter basename="/my-personal-react-website">
             <Layout>
-                  <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/about" element={<AboutPage />} />
-                    <Route path="/myprojects" element={<MyProjects />} />
-                    <Route path="/myrecommendations" element={<MyRecommendations />} />
-                    <Route path="/myblogs" element={<MyBlogs />} />
-                    <Route path="/mycontacts" element={<MyContacts />} />
-                    <Route path="/resumes" element={<Resumes />} />
-                    <Route path="/version" element={<Version />} />
-                    <Route path="/resume-engineer" element={<ResumeEngineer />} />
-                    <Route path="/resume-manager" element={<ResumeManager />} />
+                <Routes>
+                    <Route path={'/'} element={<HomePage />} />
+                    <Route path={'/about'} element={<AboutPage />} />
+                    <Route path={'/myprojects'} element={<MyProjects />} />
+                    <Route path={'/myrecommendations'} element={<MyRecommendations />} />
+                    <Route path={'/myblogs'} element={<MyBlogs />} />
+                    <Route path={'/mycontacts'} element={<MyContacts />} />
+                    <Route path={'/resumes'} element={<Resumes />} />
+                    <Route path={'/version'} element={<Version />} />
+                    <Route path={'/resume-engineer'} element={<ResumeEngineer />} />
+                    <Route path={'/resume-manager'} element={<ResumeManager />} />
                 </Routes>
             </Layout>
-        </Router>
+        </BrowserRouter>
     );
 };
 

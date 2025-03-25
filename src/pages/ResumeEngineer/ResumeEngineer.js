@@ -1,4 +1,6 @@
+import React from 'react';
 import { Helmet } from 'react-helmet';
+import '../../styles/global.css';
 
 const ResumeEngineer = () => {
     return (
@@ -9,13 +11,13 @@ const ResumeEngineer = () => {
             <div className="container-resume">
                 <h1>Engineer Resume</h1>
                 <iframe
-                    src="/assets/files/2025 - Resume - Engineer - Full.pdf"
+                    src={`${process.env.PUBLIC_URL}/assets/files/2025 - Resume - Engineer - Full.pdf`}
                     className="pdf-viewer"
                     title="Engineer Resume"
                 ></iframe>
                 <p>
                     <a
-                        href="/assets/files/2025 - Resume - Engineer - Full.pdf"
+                        href={`${process.env.PUBLIC_URL}/assets/files/2025 - Resume - Engineer - Full.pdf`}
                         target="_blank"
                         rel="noopener noreferrer"
                         download

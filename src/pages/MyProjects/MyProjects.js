@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import TextFormatter from '../../components/TextFormatter/TextFormatter';
 import '../../styles/global.css';
 
 const MyProjects = () => {
@@ -10,7 +11,7 @@ const MyProjects = () => {
         // Fetch data when the component mounts
         const fetchData = async () => {
             try {
-                const response = await fetch('/assets/data/projects.json'); // Fetch the JSON file
+                const response = await fetch(`${process.env.PUBLIC_URL}/assets/data/projects.json`); // Fetch the JSON file
                 const data = await response.json();
                 setProjects(data); // Set the project data
             } catch (err) {
@@ -41,7 +42,7 @@ const MyProjects = () => {
                             <div className={`image-container-${isOdd ? 'left' : 'right'}`}>
                                 {project.imageUrl && (
                                     <img
-                                        src={project.imageUrl}
+                                        src={(String(project.imageUrl).startsWith('/') ? process.env.PUBLIC_URL : "") + project.imageUrl}
                                         alt={project.name}
                                         className={`rounded-3 image-url-${isOdd ? 'left' : 'right'}`}
                                     />
@@ -50,27 +51,7 @@ const MyProjects = () => {
                                     View Project
                                 </a>
                             </div>
-                            {project.description.startsWith('<li>') ? (
-                                <ul>
-                                    {project.description
-                                        .split('</li>')
-                                        .filter(item => item.trim() !== '') // Remove empty items
-                                        .map((item, idx) => (
-                                            <li key={idx}>{item.split('>')[1]}</li>
-                                        ))}
-                                </ul>
-                            ) : project.description.startsWith('<p>') ? (
-                                <div className="paragraph-rows">
-                                    {project.description
-                                        .split('</p>')
-                                        .filter(item => item.trim() !== '')
-                                        .map((item, idx) => (
-                                            <p key={idx}>{item.split('>')[1]}</p>
-                                        ))}
-                                </div>
-                            ) : (
-                                <p>{project.description}</p>
-                            )}
+                            <TextFormatter textBody={project.description} quote={false} />
                         </div>
                         <br />
                     </div>

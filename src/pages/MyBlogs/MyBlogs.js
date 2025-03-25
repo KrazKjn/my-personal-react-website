@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import TextFormatter from '../../components/TextFormatter/TextFormatter';
 import '../../styles/global.css';
 
 const MyBlogs = () => {
@@ -10,7 +11,7 @@ const MyBlogs = () => {
         // Fetch data when the component mounts
         const fetchData = async () => {
             try {
-                const response = await fetch('/assets/data/blogposts.json'); // JSON data path
+                const response = await fetch(`${process.env.PUBLIC_URL}/assets/data/blogposts.json`); // JSON data path
                 const data = await response.json();
                 setItems(data); // Set items after successful fetch
             } catch (err) {
@@ -41,7 +42,7 @@ const MyBlogs = () => {
                             <div className={`image-container-${isOddRow ? 'left' : 'right'}`}>
                                 {post.imageUrl && (
                                     <img
-                                        src={post.imageUrl}
+                                        src={(String(post.imageUrl).startsWith('/') ? process.env.PUBLIC_URL : "") + post.imageUrl}
                                         alt={post.title}
                                         className={`rounded-3 image-url-${isOddRow ? 'left' : 'right'}`}
                                     />
@@ -50,27 +51,7 @@ const MyBlogs = () => {
                                     Read More
                                 </a>
                             </div>
-                            {post.summary && post.summary.startsWith('<li>') ? (
-                                <ul>
-                                    {post.summary
-                                        .split('</li>')
-                                        .filter((item) => item.trim() !== '') // Remove empty items
-                                        .map((item, idx) => (
-                                            <li key={idx}>{item.split('>')[1]}</li>
-                                        ))}
-                                </ul>
-                            ) : post.summary && post.summary.startsWith('<p>') ? (
-                                <div className="paragraph-rows">
-                                    {post.summary
-                                        .split('</p>')
-                                        .filter((item) => item.trim() !== '')
-                                        .map((item, idx) => (
-                                            <p key={idx}>{item.split('>')[1]}</p>
-                                        ))}
-                                </div>
-                            ) : (
-                                <p>{post.summary}</p>
-                            )}
+                            <TextFormatter textBody={post.summary} quote={false} />
                         </div>
                         <br />
                     </div>

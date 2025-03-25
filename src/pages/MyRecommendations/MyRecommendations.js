@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import TextFormatter from '../../components/TextFormatter/TextFormatter';
 import '../../styles/global.css';
 
 const MyRecommendations = () => {
@@ -10,7 +11,7 @@ const MyRecommendations = () => {
         // Fetch data when the component mounts
         const fetchData = async () => {
             try {
-                const response = await fetch('/assets/data/recommendations.json'); // Fetch the JSON file
+                const response = await fetch(`${process.env.PUBLIC_URL}/assets/data/recommendations.json`); // Fetch the JSON file
                 const data = await response.json();
                 setRecommendations(data); // Set the recommendations
             } catch (err) {
@@ -38,12 +39,12 @@ const MyRecommendations = () => {
                     return (
                         <div key={recommendation.id} className={`recommendation${isOdd ? ' reverse' : ''}`}>
                             <img
-                                src={recommendation.imageUrl}
+                                src={(String(recommendation.imageUrl).startsWith('/') ? process.env.PUBLIC_URL : "") + recommendation.imageUrl}
                                 alt={recommendation.author}
                                 className={`rounded-circle image-url-${isOdd ? 'left' : 'right'}`}
                             />
                             <blockquote>
-                                <p>"{recommendation.textBody}"</p>
+                                <TextFormatter textBody={recommendation.textBody} quote={true} />
                                 <footer>
                                     <a
                                         href={recommendation.link}

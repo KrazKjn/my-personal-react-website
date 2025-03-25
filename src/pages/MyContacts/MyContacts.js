@@ -1,9 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import ResizableBackground from '../../components/ResizableBackground/ResizableBackground';
 
 const MyContacts = () => {
     return (
         <div className="container">
+            <ResizableBackground />
             <Helmet>
                 <title>Mark J. Hogan - My Contact</title>
             </Helmet>

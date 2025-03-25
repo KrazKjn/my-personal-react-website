@@ -1,10 +1,12 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import ResizableBackground from '../../components/ResizableBackground/ResizableBackground';
 import '../../styles/global.css';
 
 const ResumeManager = () => {
     return (
         <>
+            <ResizableBackground />
             <Helmet>
                 <title>Manager Resume</title>
             </Helmet>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import ResizableBackground from '../../components/ResizableBackground/ResizableBackground';
 import TextFormatter from '../../components/TextFormatter/TextFormatter';
 import '../../styles/global.css';
 
@@ -29,6 +30,7 @@ const MyBlogs = () => {
 
     return (
         <div className="container">
+            <ResizableBackground />
             <Helmet>
                 <title>Mark J. Hogan - My Blogs</title>
             </Helmet>

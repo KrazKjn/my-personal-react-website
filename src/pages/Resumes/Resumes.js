@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import ResizableBackground from '../../components/ResizableBackground/ResizableBackground';
 import '../../styles/global.css';
 
 const Resumes = () => {
     return (
         <div className="container">
+            <ResizableBackground />
             <Helmet>
                 <title>Mark J. Hogan - My Resumes</title>
             </Helmet>
@@ -12,10 +15,14 @@ const Resumes = () => {
             <p>Select a resume to view:</p>
             <ul>
                 <li>
-                    <a href={`${process.env.PUBLIC_URL}/resume-engineer`}>Engineer Resume</a>
+                    <Link className="nav-link" to="/resume-engineer">
+                        <span className="bi bi-journal-text-nav-menu" aria-hidden="true"></span> Engineer Resume
+                    </Link>
                 </li>
                 <li>
-                    <a href={`${process.env.PUBLIC_URL}/resume-manager`}>Manager Resume</a>
+                    <Link className="nav-link" to="/resume-manager">
+                        <span className="bi bi-journal-text-nav-menu" aria-hidden="true"></span> Manager Resume
+                    </Link>
                 </li>
             </ul>
         </div>

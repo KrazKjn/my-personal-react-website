@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import ResizableBackground from '../../components/ResizableBackground/ResizableBackground';
+import GitHubLink from '../../components/GitHubLink/GitHubLink';
 import TextFormatter from '../../components/TextFormatter/TextFormatter';
 import '../../styles/global.css';
 
@@ -31,6 +32,7 @@ const MyProjects = () => {
     return (
         <div className="container">
             <ResizableBackground />
+            <GitHubLink filePath="pages/MyProjects/MyProjects.js" />
             <Helmet>
                 <title>Mark J. Hogan - My Projects</title>
             </Helmet>

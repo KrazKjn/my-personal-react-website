@@ -2,12 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import ResizableBackground from '../../components/ResizableBackground/ResizableBackground';
+import GitHubLink from '../../components/GitHubLink/GitHubLink';
 import '../../styles/global.css';
 
 const Resumes = () => {
     return (
         <div className="container">
             <ResizableBackground />
+            <GitHubLink filePath="pages/Resumes/Resumes.js" />
             <Helmet>
                 <title>Mark J. Hogan - My Resumes</title>
             </Helmet>

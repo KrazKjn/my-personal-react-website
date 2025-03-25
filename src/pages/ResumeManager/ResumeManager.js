@@ -1,12 +1,14 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import ResizableBackground from '../../components/ResizableBackground/ResizableBackground';
+import GitHubLink from '../../components/GitHubLink/GitHubLink';
 import '../../styles/global.css';
 
 const ResumeManager = () => {
     return (
         <>
             <ResizableBackground />
+            <GitHubLink filePath="pages/ResumeManager/ResumeManager.js" />
             <Helmet>
                 <title>Manager Resume</title>
             </Helmet>

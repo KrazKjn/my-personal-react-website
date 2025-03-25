@@ -1,11 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import ResizableBackground from '../../components/ResizableBackground/ResizableBackground';
+import GitHubLink from '../../components/GitHubLink/GitHubLink';
 
 const AboutPage = () => {
     return (
         <div className="container">
             <ResizableBackground />
+            <GitHubLink filePath="pages/AboutPage/AboutPage.js" />
             <Helmet>
                 <title>Mark J. Hogan - Professional Summary</title>
             </Helmet>

@@ -1,11 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import ResizableBackground from '../../components/ResizableBackground/ResizableBackground';
+import GitHubLink from '../../components/GitHubLink/GitHubLink';
 
 const MyContacts = () => {
     return (
         <div className="container">
             <ResizableBackground />
+            <GitHubLink filePath="pages/MyContacts/MyContacts.js" />
             <Helmet>
                 <title>Mark J. Hogan - My Contact</title>
             </Helmet>

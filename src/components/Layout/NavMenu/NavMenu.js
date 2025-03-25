@@ -14,10 +14,8 @@ const NavMenu = () => {
             // Toggle the "collapse" class
             if (isCurrentlyCollapsed) {
                 element.classList.remove("collapse");
-                console.log("expanding menu");
             } else if (window.innerWidth < 640.98) {
                 element.classList.add("collapse");
-                console.log("collapsing menu");
             }
         } else {
             console.error("Element with id 'NavigationMenu' not found.");

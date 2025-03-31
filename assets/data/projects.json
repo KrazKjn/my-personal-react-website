@@ -33,7 +33,7 @@
           "id": 0,
           "name": "Personal Website in Blazor",
           "description": "Personal Website developed in Microsoft Blazor",
-          "link": "httpshttps://krazkjn.github.io/my-personal-blazor-website/",
+          "link": "https://krazkjn.github.io/my-personal-blazor-website/",
           "imageUrl": "/assets/images/Blazor.jfif",
           "imageAlt": "Blazor Personal Website"
         }        
@@ -41,6 +41,32 @@
     },
     {
       "id": 5,
+      "name": "React Personal Website Example",
+      "description": "React Personal Website Example",
+      "link": "https://github.com/KrazKjn/my-personal-react-website",
+      "imageUrl": "/assets/images/react.svg",
+      "imageAlt": "React Personal Website Example",
+      "projects": [
+        {
+          "id": 0,
+          "name": "Personal Website in React",
+          "description": "Personal Website developed in React",
+          "link": "https://krazkjn.github.io/my-personal-react-website/",
+          "imageUrl": "/assets/images/react.svg",
+          "imageAlt": "React Personal Website Example"
+        }        
+       ]
+    },
+    {
+      "id": 6,
+      "name": "Microsoft Entity Framework Examples",
+      "description": "Microsoft Entity Framework Examples",
+      "link": "https://github.com/KrazKjn/entity_framework_examples",
+      "imageUrl": "/assets/images/entity_framework.jfif",
+      "imageAlt": "Entity Framework Examples"
+    },
+    {
+      "id": 7,
       "name": "Miscellaneous PowerShell Examples",
       "description": "Miscellaneous PowerShell Examples",
       "link": "https://github.com/KrazKjn/powershell_examples",
@@ -48,7 +74,7 @@
       "imageAlt": "PowerShell Examples"
     },
     {
-      "id": 6,
+      "id": 8,
       "name": "Miscellaneous SMTP Examples",
       "description": "Example SMTP PowerShell Scripts",
       "link": "https://github.com/KrazKjn/smtp_examples",

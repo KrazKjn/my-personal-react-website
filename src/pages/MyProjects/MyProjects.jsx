@@ -46,7 +46,7 @@ const MyProjects = () => {
                         <div className={`recommendation${isOdd ? ' reverse' : ''}`}>
                             <div className={`image-container-${isOdd ? 'left' : 'right'}`}>
                                 {project.link ? (
-                                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer" title={`View ${project.name} Repository ...`}>
                                     {project.imageUrl ? (
                                         <img
                                         src={(String(project.imageUrl).startsWith('/') ? process.env.PUBLIC_URL : "") + project.imageUrl}

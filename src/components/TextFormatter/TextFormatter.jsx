@@ -1,6 +1,8 @@
 import React from 'react';
 
 const TextFormatter = ({ textBody, quote }) => {
+  // Function to process the text body based on its content
+  // and return the appropriate JSX elements
   const processTextBody = (text) => {
     if (text.startsWith('<li>')) {
       // Process list items, optionally quote each one
@@ -14,17 +16,17 @@ const TextFormatter = ({ textBody, quote }) => {
 
       return <ul>{listItems}</ul>;
     } else if (text.startsWith('<p>')) {
-        let updatedText = text;
-        // Process paragraphs, optionally quote the last one
-        if (quote) {
-            updatedText = '<p>"' + text.substring('<p>'.length);
-            const lastIndex = updatedText.lastIndexOf('</p>');
- 
-            if (lastIndex !== -1) {
-                // Replace the last occurrence of "<p>" with "<p>\""
-                updatedText = updatedText.substring(0, lastIndex) + '"</p>';
-            }
+      let updatedText = text;
+      // Process paragraphs, optionally quote the last one
+      if (quote) {
+        updatedText = '<p>"' + text.substring('<p>'.length);
+        const lastIndex = updatedText.lastIndexOf('</p>');
+
+        if (lastIndex !== -1) {
+          // Replace the last occurrence of "<p>" with "<p>\""
+          updatedText = updatedText.substring(0, lastIndex) + '"</p>';
         }
+      }
 
       const paragraphs = updatedText
         .split('</p>')
@@ -41,7 +43,7 @@ const TextFormatter = ({ textBody, quote }) => {
     }
   };
 
-  return <div>{processTextBody(textBody)}</div>;
+  return <div className="paragraph-rows">{processTextBody(textBody)}</div>;
 };
 
 export default TextFormatter;

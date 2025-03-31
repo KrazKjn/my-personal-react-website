@@ -10,35 +10,50 @@
       "name": "Advanced Logging Project",
       "description": "The AdvancedLogging solution is a comprehensive logging framework designed to enhance the logging capabilities of C# and VB.NET applications.",
       "link": "https://github.com/KrazKjn/AdvancedLogging",
-      "imageUrl": "/assets/images/AutoLogging.png"
+      "imageUrl": "/assets/images/AutoLogging.png",
+      "imageAlt": "Advanced Logging Project"
     },
     {
       "id": 3,
       "name": "Microsoft Graph API Examples",
       "description": "Microsoft Graph API Examples",
       "link": "https://github.com/KrazKjn/graph_api_examples",
-      "imageUrl": "/assets/images/GraphAPI.jfif"
+      "imageUrl": "/assets/images/GraphAPI.jfif",
+      "imageAlt": "Graph API Examples"
     },
     {
       "id": 4,
       "name": "Microsoft Blazor Examples",
       "description": "Microsoft Blazor Examples",
       "link": "https://github.com/KrazKjn/blazor_examples",
-      "imageUrl": "/assets/images/Blazor.jfif"
+      "imageUrl": "/assets/images/Blazor.jfif",
+      "imageAlt": "Blazor Examples",
+      "projects": [
+        {
+          "id": 0,
+          "name": "Personal Website in Blazor",
+          "description": "Personal Website developed in Microsoft Blazor",
+          "link": "httpshttps://krazkjn.github.io/my-personal-blazor-website/",
+          "imageUrl": "/assets/images/Blazor.jfif",
+          "imageAlt": "Blazor Personal Website"
+        }        
+       ]
     },
     {
       "id": 5,
       "name": "Miscellaneous PowerShell Examples",
       "description": "Miscellaneous PowerShell Examples",
       "link": "https://github.com/KrazKjn/powershell_examples",
-      "imageUrl": "/assets/images/PowerShell.jfif"
+      "imageUrl": "/assets/images/PowerShell.jfif",
+      "imageAlt": "PowerShell Examples"
     },
     {
       "id": 6,
       "name": "Miscellaneous SMTP Examples",
       "description": "Example SMTP PowerShell Scripts",
       "link": "https://github.com/KrazKjn/smtp_examples",
-      "imageUrl": "/assets/images/SMTP.jfif"
+      "imageUrl": "/assets/images/SMTP.jfif",
+      "imageAlt": "SMTP Examples"
     }
   ]
   

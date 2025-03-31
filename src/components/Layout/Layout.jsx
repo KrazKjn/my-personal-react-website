@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
 
             <main>
                 <div className="top-row px-4">
-                    <a href="https://react.dev/" target="_blank">About React</a>
+                    <a href="https://react.dev/" target="_blank noreferrer">About React</a>
                 </div>
                 <Header />
 

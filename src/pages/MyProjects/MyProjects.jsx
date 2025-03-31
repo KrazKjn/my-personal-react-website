@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import ResizableBackground from '../../components/ResizableBackground/ResizableBackground';
 import GitHubLink from '../../components/GitHubLink/GitHubLink';
 import TextFormatter from '../../components/TextFormatter/TextFormatter';
+import ProjectList from '../../components/ProjectList/ProjectList';
 import '../../styles/global.css';
 
 const MyProjects = () => {
@@ -44,18 +45,28 @@ const MyProjects = () => {
                         <h3>{project.name}</h3>
                         <div className={`recommendation${isOdd ? ' reverse' : ''}`}>
                             <div className={`image-container-${isOdd ? 'left' : 'right'}`}>
-                                {project.imageUrl && (
-                                    <img
+                                {project.link ? (
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                    {project.imageUrl ? (
+                                        <img
                                         src={(String(project.imageUrl).startsWith('/') ? process.env.PUBLIC_URL : "") + project.imageUrl}
-                                        alt={project.name}
+                                        alt={project.imageAlt ?? project.name}
                                         className={`rounded-3 image-url-${isOdd ? 'left' : 'right'}`}
-                                    />
+                                        />
+                                    ) : (
+                                        "View Project(s) Repository"
+                                    )}
+                                    </a>
+                                ) : (
+                                    <p>No link provided</p>
                                 )}
-                                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                                    View Project
-                                </a>
                             </div>
-                            <TextFormatter textBody={project.description} quote={false} />
+                            {project.description && (
+                                <TextFormatter textBody={project.description} quote={false} />
+                            )}
+                            {project.projects && (
+                                <ProjectList projects={project.projects} />
+                            )}
                         </div>
                         <br />
                     </div>

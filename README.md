@@ -68,3 +68,62 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## To publish a React project to **GitHub Pages**, follow these steps:
+
+### **1. Install `gh-pages` Package**
+GitHub Pages hosts static sites, and the `gh-pages` package helps deploy your React app. Install it using:
+
+```sh
+npm install gh-pages --save-dev
+```
+
+### **2. Configure `package.json`**
+Modify your `package.json` file to include a **homepage** field:
+
+```json
+"homepage": "https://<your-username>.github.io/<your-repo-name>"
+```
+
+Then, add deployment scripts:
+
+```json
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+```
+
+### **3. Initialize Git and Push to GitHub**
+If you haven't already, initialize a Git repository and push your project:
+
+```sh
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/<your-username>/<your-repo-name>.git
+git push -u origin main
+```
+
+### **4. Deploy to GitHub Pages**
+Run:
+
+```sh
+npm run deploy
+```
+
+This will create a **`gh-pages` branch**, which GitHub Pages uses to serve your site.
+
+### **5. Enable GitHub Pages**
+- Go to your repository on GitHub.
+- Navigate to **Settings > Pages**.
+- Under **Source**, select **gh-pages** branch.
+- Click **Save**.
+
+### **Updating Your Site**
+Whenever you make changes, simply run:
+
+```sh
+npm run deploy
+```

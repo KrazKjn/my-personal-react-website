@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import HomePage from './pages/HomePage/HomePage';
-import AboutPage from './pages/AboutPage/AboutPage';
+import ProfessionalSummary from './pages/ProfessionalSummary/ProfessionalSummary';
 import MyBlogs from './pages/MyBlogs/MyBlogs';
 import MyProjects from './pages/MyProjects/MyProjects';
 import MyRecommendations from './pages/MyRecommendations/MyRecommendations';
@@ -18,7 +18,7 @@ const App = () => {
             <Layout>
                 <Routes>
                     <Route path={'/'} element={<HomePage />} />
-                    <Route path={'/about'} element={<AboutPage />} />
+                    <Route path={'/professionalsummary'} element={<ProfessionalSummary />} />
                     <Route path={'/myprojects'} element={<MyProjects />} />
                     <Route path={'/myrecommendations'} element={<MyRecommendations />} />
                     <Route path={'/myblogs'} element={<MyBlogs />} />

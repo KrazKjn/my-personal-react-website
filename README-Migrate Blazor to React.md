@@ -38,7 +38,7 @@ Migrating a Blazor website to React involves several steps, as you're transition
              <Router>
                  <Switch>
                      <Route path="/home" component={Home} />
-                     <Route path="/about" component={About} />
+                     <Route path="/professionalsummary" component={ProfessionalSummary} />
                  </Switch>
              </Router>
          );

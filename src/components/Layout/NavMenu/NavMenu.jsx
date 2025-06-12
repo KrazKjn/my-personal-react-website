@@ -55,8 +55,8 @@ const NavMenu = () => {
                         </Link>
                     </div>
                     <div className="nav-item px-3">
-                        <Link className="nav-link" to="/about">
-                            <span className="bi bi-person-badge-fill-nav-menu" aria-hidden="true"></span> About Me
+                        <Link className="nav-link" to="/professionalsummary">
+                            <span className="bi bi-person-badge-fill-nav-menu" aria-hidden="true"></span> Professional Summary
                         </Link>
                     </div>
                     <div className="nav-item px-3">

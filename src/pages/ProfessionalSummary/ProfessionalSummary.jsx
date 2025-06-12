@@ -3,11 +3,11 @@ import { Helmet } from 'react-helmet';
 import ResizableBackground from '../../components/ResizableBackground/ResizableBackground';
 import GitHubLink from '../../components/GitHubLink/GitHubLink';
 
-const AboutPage = () => {
+const ProfessionalSummary = () => {
     return (
         <div className="container">
             <ResizableBackground />
-            <GitHubLink filePath="pages/AboutPage/AboutPage.js" />
+            <GitHubLink filePath="pages/ProfessionalSummary/ProfessionalSummary.js" />
             <Helmet>
                 <title>Mark J. Hogan - Professional Summary</title>
             </Helmet>
@@ -76,4 +76,4 @@ const AboutPage = () => {
     );
 };
 
-export default AboutPage;
+export default ProfessionalSummary;

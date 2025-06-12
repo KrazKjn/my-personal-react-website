@@ -12,22 +12,30 @@ const HomePage = () => {
                 <title>Mark J. Hogan</title>
             </Helmet>
 
-            <h1>Mark J. Hogan</h1>
-            <h2>Independent Software Developer, Engineer & Architect, Manager</h2>
+            <h1>Welcome to Mark J. Hogan's Personal Website</h1>
 
             <p>
-                With over 30 years of experience in software engineering, systems architecture, and IT management, I specialize in designing scalable, high-performance solutions that drive efficiency and innovation.
+                I am <strong>Mark J. Hogan</strong>, a Software Engineering Professional with extensive experience in designing, developing, architecting, and managing solutions.
+                Welcome to my personal website, built using <em>React</em>!
             </p>
+
+            <h2>About Me</h2>
             <p>
-                My background spans full-stack development, automation, and distributed control systems—with a strong focus on optimizing workflows and eliminating human error through technology.
+                As an <strong>Independent Software Developer, Engineer, Architect, and Manager</strong>, I bring over 30 years of experience in software engineering, systems architecture, and IT management.
+                My expertise lies in designing <strong>scalable, high-performance solutions</strong> that drive efficiency and innovation.
             </p>
+
             <p>
-                I’ve led teams, spearheaded system transformations, and delivered zero-defect software releases—all while mentoring the next generation of engineers. Whether it's developing REST APIs, automating enterprise environments, or enhancing cybersecurity protocols, I thrive on solving complex technical challenges.
+                My background spans <strong>full-stack development, automation, and distributed control systems</strong>, with a focus on optimizing workflows and eliminating human error through technology.
+                I have led teams, spearheaded system transformations, and delivered <strong>zero-defect software releases</strong> while mentoring the next generation of engineers.
             </p>
+
             <p>
-                As an independent software developer and consultant, I bring my expertise to businesses and startups seeking robust, scalable architecture, system automation, and software engineering excellence.
+                Whether it's developing REST APIs, automating enterprise environments, or enhancing cybersecurity protocols, I thrive on solving complex technical challenges.
             </p>
+
             <p>
+                As a consultant and independent software developer, I bring my expertise to businesses and startups seeking <strong>robust, scalable architecture, system automation, and software engineering excellence</strong>.
                 I actively contribute to open-source projects, share insights on my blog, and engage with the developer community to push boundaries in software innovation.
             </p>
 

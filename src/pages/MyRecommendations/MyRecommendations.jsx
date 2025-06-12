@@ -44,7 +44,7 @@ const MyRecommendations = () => {
                         <div key={recommendation.id} className={`recommendation${isOdd ? ' reverse' : ''}`}>
                             <img
                                 src={(String(recommendation.imageUrl).startsWith('/') ? process.env.PUBLIC_URL : "") + recommendation.imageUrl}
-                                alt={recommendation.author}
+                                alt={recommendation.imageAlt ?? recommendation.author}
                                 className={`rounded-circle image-url-${isOdd ? 'left' : 'right'}`}
                             />
                             <blockquote>

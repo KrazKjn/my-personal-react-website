@@ -13,13 +13,16 @@ const AboutPage = () => {
             </Helmet>
             <h1>Professional Summary</h1>
             <p>
-                Results-driven Senior Software Engineer with over 20 years of experience in IT, specializing in software development, 
-                design, architecture, and Agile methodologies. Demonstrated expertise in leading engineering teams, managing complex projects, 
-                and driving innovative solutions. Proven track record of achieving zero-outage releases, significantly enhancing product stability 
-                and client satisfaction. Proficient in Microsoft .NET, REST/SOAP web services, real-time development, and utilizing CoPilot and AI 
-                tools to optimize code quality and efficiency. Adept at designing and architecting robust software systems, and monitoring performance 
-                to ensure continuous improvement. Dual Bachelor's degrees in Computer Science and Mathematics. Committed to fostering a culture of 
-                continuous learning and collaboration, delivering high-quality, client-focused solutions.
+                Results-driven Senior Software Engineer with 20+ years of experience in IT—committed to driving innovation and excellence for the next decade. Specializing in software development, design, architecture, and Agile methodologies, with a strong track record in leading engineering teams, managing complex projects, and delivering transformative solutions.
+            </p>
+            <p>
+                Proven expertise in zero-outage releases, significantly enhancing product stability and client satisfaction. Skilled in Microsoft .NET, REST/SOAP web services, real-time development, and leveraging Copilot and AI tools to optimize code quality and efficiency.
+            </p>
+            <p>
+                Adept at designing and architecting robust software systems, monitoring performance for continuous improvement, and implementing best practices that elevate software reliability and scalability. Holding dual Bachelor's degrees in Computer Science and Mathematics, I remain dedicated to fostering a culture of continuous learning, collaboration, and mentorship while delivering high-quality, client-focused solutions.
+            </p>
+            <p>
+                Looking ahead, I am committed to leading engineering initiatives, shaping system architecture, and driving impactful advancements in the field of software development. My goal is to continue solving complex technical challenges, guiding teams to success, and leaving a lasting mark in the industry over the next decade.
             </p>
 
             <h2>Core Skills</h2>

@@ -22,6 +22,11 @@ const Resumes = () => {
                     </Link>
                 </li>
                 <li>
+                    <Link className="nav-link" to="/resume-architect">
+                        <span className="bi bi-journal-text-nav-menu" aria-hidden="true"></span> Architect Resume
+                    </Link>
+                </li>
+                <li>
                     <Link className="nav-link" to="/resume-manager">
                         <span className="bi bi-journal-text-nav-menu" aria-hidden="true"></span> Manager Resume
                     </Link>

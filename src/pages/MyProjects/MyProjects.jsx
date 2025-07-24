@@ -54,7 +54,8 @@ const MyProjects = () => {
                                         className={`rounded-3 image-url-${isOdd ? 'left' : 'right'}`}
                                         />
                                     ) : (
-                                        "View Project(s) Repository"
+                                        //"View Project(s) Repository"
+                                        project.imageAlt ?? project.name
                                     )}
                                     </a>
                                 ) : (

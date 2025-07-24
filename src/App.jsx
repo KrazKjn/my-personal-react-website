@@ -11,6 +11,7 @@ import Version from './pages/Version/Version';
 import Resumes from './pages/Resumes/Resumes';
 import ResumeEngineer from './pages/ResumeEngineer/ResumeEngineer';
 import ResumeManager from './pages/ResumeManager/ResumeManager';
+import ResumeArchitect from './pages/ResumeArchitect/ResumeArchitect';
 
 const App = () => {
     return (
@@ -27,6 +28,7 @@ const App = () => {
                     <Route path={'/version'} element={<Version />} />
                     <Route path={'/resume-engineer'} element={<ResumeEngineer />} />
                     <Route path={'/resume-manager'} element={<ResumeManager />} />
+                    <Route path={'/resume-architect'} element={<ResumeArchitect />} />
                 </Routes>
             </Layout>
         </BrowserRouter>

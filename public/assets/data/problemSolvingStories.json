@@ -1,0 +1,98 @@
+[
+  {
+    "title": "⚡ TDXFER: Restoring SCADA Cross-Unit Visibility",
+    "problem": "PSC removal broke inter-unit telemetry in TDACS.",
+    "solution": "Repurposed a test interface and created TDXFER to restore value transfer between PCCs.",
+    "lesson": "Even decommissioned systems leave behind interfaces that can be reinvented.",
+    "domainTags": ["SCADA", "TDACS", "Refinery", "Data Engineering"],
+    "importanceRank": 1
+  },
+  {
+    "title": "📡 Auto-Healing TCP/IP for Data General Systems",
+    "problem": "Buggy third-party stack failed silently over time.",
+    "solution": "Used sinusoidal heartbeats to detect flatlines and restart services with alerting.",
+    "lesson": "Unreliable vendors aren’t the end—resilience comes from creativity.",
+    "domainTags": ["Networking", "Automation", "SCADA", "Unix"],
+    "importanceRank": 2
+  },
+  {
+    "title": "🛠 CIM/21 SCADA Aggregator – A New PSC",
+    "problem": "No unified telemetry system across refinery units.",
+    "solution": "Used CIMIO interfaces to scan TDACS, OPC, and DDE—repurposed SCADA as cross-unit console.",
+    "lesson": "You can wire intelligence across domains if you deeply know the stack.",
+    "domainTags": ["SCADA", "OPC", "Telemetry", "UX"],
+    "importanceRank": 3
+  },
+  {
+    "title": "🔒 NT 4.0 Secure Desktop Model (Precursor to IT Works)",
+    "problem": "Users needed full functionality without admin rights.",
+    "solution": "Engineered redirect paths and permissions for registry, file system, and configs—secure by design.",
+    "lesson": "Security isn’t an add-on—it’s designed in.",
+    "domainTags": ["Windows", "Security", "Registry", "UX"],
+    "importanceRank": 4
+  },
+  {
+    "title": "🧩 IT Works – Modular System Management Platform",
+    "problem": "Texaco lacked a unified, scalable system for installations, remote support, help desk workflows, and user lifecycle automation.",
+    "solution": "Architected and deployed IT Works, a modular platform with Builder (installation engine), Servicer (remote support), Manager (help desk), and Architecter (directory editor), all designed for persona-based automation and least-privilege enforcement.",
+    "lesson": "Modular thinking and user empathy turn infrastructure into a service—not just a system.",
+    "domainTags": ["Infrastructure", "Automation", "System Management", "Legacy Modernization"],
+    "importanceRank": 12
+  },
+  {
+    "title": "🧑‍💻 Mission Control Console with Live Asset & Ticket Integration",
+    "problem": "No live user/computer view or automated ticketing in the refinery domain.",
+    "solution": "Built SQL Server-backed dashboard with actionable context menus and auto-logging.",
+    "lesson": "Ticketing should document reality, not disrupt it.",
+    "domainTags": ["SQL", "ITSM", "UX", "WinForms"],
+    "importanceRank": 5
+  },
+  {
+    "title": "📊 Excel-Powered Linux DNS Administration",
+    "problem": "Pre-Windows DNS required manual edits and command-line deployment.",
+    "solution": "Built Excel/VBA scripts to generate zone files and trigger remote restarts from a user-friendly sheet.",
+    "lesson": "Enterprise-grade doesn’t mean GUI-less.",
+    "domainTags": ["DNS", "Excel", "Automation", "Linux"],
+    "importanceRank": 6
+  },
+  {
+    "title": "🧬 Domain Hygiene via Perl Scripting",
+    "problem": "Inconsistencies in user account names, group membership, and profile shares.",
+    "solution": "Built Perl-based suite to enforce domain uniformity, permissions, and folder creation.",
+    "lesson": "Predictability matters when scaling identity and access.",
+    "domainTags": ["Perl", "Identity Management", "Scripting", "Domain Services"],
+    "importanceRank": 7
+  },
+  {
+    "title": "🖧 Bricked Router Recovery",
+    "problem": "Wrong firmware installed—router became unresponsive.",
+    "solution": "Accessed UART via terminal emulator and reflashed correct firmware using TFTP.",
+    "lesson": "Curiosity and confidence are stronger than fear when facing undocumented problems.",
+    "domainTags": ["Hardware", "Networking", "Embedded"],
+    "importanceRank": 8
+  },
+  {
+    "title": "🔩 Rebuilding a 350 Engine",
+    "problem": "Complete engine restoration from bare block without prefabricated kits.",
+    "solution": "Honed cylinders, installed camshaft, crankshaft, pistons—rebuilt engine to spec.",
+    "lesson": "Understanding systems comes from building them, bolt by bolt.",
+    "domainTags": ["Mechanical", "Restoration", "Automotive"],
+    "importanceRank": 9
+  },
+  {
+    "title": "🧺 Appliance Repair Across Generations",
+    "problem": "Multiple household appliances failed across different homes.",
+    "solution": "Diagnosed electrical and mechanical faults, sourced parts, and completed all repairs independently.",
+    "lesson": "Empathy plus engineering equals reliability where it matters most.",
+    "domainTags": ["Appliance", "Diagnostics", "Repair"],
+    "importanceRank": 10
+  },
+  {
+    "title": "❄️ HVAC Retrofit with Modern Freon",
+    "problem": "Legacy R-22 HVAC system needed modernization without full unit replacement.",
+    "solution": "Researched refrigerant compatibility, retrofitted for R-454A, and optimized operational integrity.",
+    "lesson": "Solutions live at the intersection of chemistry, economics, and engineering.",
+    "domainTags": ["HVAC", "Chemistry", "Retrofit"],
+    "importanceRank": 11
+  }
+]

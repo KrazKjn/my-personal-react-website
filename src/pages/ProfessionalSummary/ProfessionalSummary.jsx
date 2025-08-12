@@ -17,7 +17,7 @@ const ProfessionalSummary = () => {
       <header>
         <h1>🧠 Professional Summary</h1>
         <nav className="toc-nav">
-          <ul>
+          <ul className='custom-list'>
             <li><a href="#overview">Overview</a></li>
             <li><a href="#expertise_approach">🚀 Expertise & Approach</a></li>
             <li><a href="#skills">🧰 Core Skills</a></li>
@@ -43,7 +43,7 @@ const ProfessionalSummary = () => {
 
       <section id="expertise_approach">
         <h2>🚀 Expertise & Approach</h2>
-        <ul>
+        <ul className='custom-list'>
           <li><strong>Technical Skills:</strong> Microsoft .NET (C#, VB, C++), REST/SOAP Web Services, ASP.NET, SQL Server, T-SQL, Scripting, Multithreaded Development, Windows API, React, GitHub Actions, Copilot</li>
           <li><strong>Soft Skills:</strong> Team Leadership, Communication, Root Cause Analysis, Agile/SAFe Facilitation, QA and DevOps Alignment</li>
         </ul>
@@ -54,7 +54,7 @@ const ProfessionalSummary = () => {
         <div className="skills-columns">
             <div>
             <h4>Technical Skills</h4>
-            <ul>
+            <ul className='custom-list'>
                 <li>Microsoft .NET (C#, VB, C++)</li>
                 <li>REST/SOAP Web Services</li>
                 <li>ASP.NET, SQL Server, T-SQL</li>
@@ -66,7 +66,7 @@ const ProfessionalSummary = () => {
 
             <div>
             <h4>Soft Skills</h4>
-            <ul>
+            <ul className='custom-list'>
                 <li>Team Leadership</li>
                 <li>Clear Communication</li>
                 <li>Root Cause Analysis</li>
@@ -77,7 +77,7 @@ const ProfessionalSummary = () => {
 
             <div>
             <h4>Delivery Methodologies</h4>
-            <ul>
+            <ul className='custom-list'>
                 <li>Agile (Scrum, SAFe)</li>
                 <li>Program Increment (PI) Planning</li>
                 <li>CI/CD Automation</li>
@@ -91,7 +91,7 @@ const ProfessionalSummary = () => {
 
       <section id="accomplishments">
         <h2>🌟 Selected Accomplishments</h2>
-        <ul>
+        <ul className='custom-list'>
           <li>Designed and implemented Backend-for-Frontend (BFF) architecture, transitioning a legacy WPF product to React and .NET Core</li>
           <li>Delivered the first two consecutive zero-defect releases, increasing client satisfaction and deployment reliability</li>
           <li>Automated hands-free, full system builds for enterprise platforms, reducing setup times by 50–75%</li>
@@ -118,7 +118,7 @@ const ProfessionalSummary = () => {
 
       <section id="education">
         <h2>🎓 Education</h2>
-        <ul>
+        <ul className='custom-list'>
           <li>B.S. in Mathematics – Nicholls State University</li>
           <li>B.S. in Computer Science – Nicholls State University</li>
         </ul>

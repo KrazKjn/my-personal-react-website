@@ -5,11 +5,14 @@ import './index.css';
 import './styles/global.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { SiteConfigProvider } from './context/SiteConfigContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <SiteConfigProvider>
+      <App />
+    </SiteConfigProvider>
   </React.StrictMode>
 );
 

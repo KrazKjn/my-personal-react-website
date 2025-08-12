@@ -1,0 +1,12 @@
+.container h1 {
+    font-size: 2rem;
+    color: #f8f9fa;
+}
+
+.OfferingCard {
+    transition: transform 0.2s ease;
+}
+
+.OfferingCard:hover {
+    transform: scale(1.02);
+}

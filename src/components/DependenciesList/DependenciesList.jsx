@@ -12,7 +12,7 @@ const DependenciesList = () => {
   return (
     <div>
       <h1>Dependencies and Versions</h1>
-      <ul>
+      <ul className='custom-list'>
           <li key="Version">
             Version: {appVersion}
           </li>

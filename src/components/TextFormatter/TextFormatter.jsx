@@ -14,7 +14,7 @@ const TextFormatter = ({ textBody, quote }) => {
           return <li key={idx}>{quote ? `"${content}"` : content}</li>; // Quote conditionally
         });
 
-      return <ul>{listItems}</ul>;
+      return <ul className='custom-list'>{listItems}</ul>;
     } else if (text.startsWith('<p>')) {
       let updatedText = text;
       // Process paragraphs, optionally quote the last one

@@ -18,7 +18,7 @@ const ResumeManager = () => {
                     src={`${process.env.PUBLIC_URL}/assets/files/2025 - Resume - Manager - Full.pdf`}
                     className="pdf-viewer"
                     title="Manager Resume"
-                ></iframe>
+                />
                 <p>
                     <a
                         href={`${process.env.PUBLIC_URL}/assets/files/2025 - Resume - Manager - Full.pdf`}

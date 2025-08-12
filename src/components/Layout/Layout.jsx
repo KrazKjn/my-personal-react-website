@@ -1,10 +1,11 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import Header from './Header/Header';
 //import Sidebar from './Sidebar/Sidebar';
 import NavMenu from './NavMenu/NavMenu';
 import './Layout.css';
 
-const Layout = ({ children }) => {
+const Layout = () => {
     return (
         <div className="page">
             <div className="sidebar">
@@ -13,12 +14,12 @@ const Layout = ({ children }) => {
 
             <main>
                 <div className="top-row px-4">
-                    <a href="https://react.dev/" target="_blank noreferrer">About React</a>
+                    <a href="https://react.dev/" target="_blank" rel="noreferrer">About React</a>
                 </div>
                 <Header />
 
                 <article className="content px-4">
-                    {children}
+                    <Outlet />
                 </article>
             </main>
         </div>

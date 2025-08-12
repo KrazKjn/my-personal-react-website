@@ -15,7 +15,7 @@ const Resumes = () => {
             </Helmet>
             <h1>My Resumes</h1>
             <p>Select a resume to view:</p>
-            <ul>
+            <ul className='custom-list'>
                 <li>
                     <Link className="nav-link" to="/resume-engineer">
                         <span className="bi bi-journal-text-nav-menu" aria-hidden="true"></span> Engineer Resume
@@ -29,6 +29,11 @@ const Resumes = () => {
                 <li>
                     <Link className="nav-link" to="/resume-manager">
                         <span className="bi bi-journal-text-nav-menu" aria-hidden="true"></span> Manager Resume
+                    </Link>
+                </li>
+                <li>
+                    <Link className="nav-link" to="/infrastructure-legacy-systems-engineering-addendum">
+                        <span className="bi bi-journal-text-nav-menu" aria-hidden="true"></span> Infrastructure Legacy Systems Engineering Addendum
                     </Link>
                 </li>
             </ul>

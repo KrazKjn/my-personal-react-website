@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./GitHubLink.css"; // Import your CSS file for styling
+import { SiteConfigContext } from '../../context/SiteConfigContext';
 
 const GitHubLink = ({ filePath }) => {
-    const baseURL = "https://github.com/KrazKjn/my-personal-react-website/blob/main/src";
+    const config = useContext(SiteConfigContext);
+
+    if (!config) return null;
+
+    const baseURL = `${config.GitHubProfile}/my-personal-react-website/blob/main/src`;
     const fullURL = `${baseURL}/${filePath}`;
 
     return (

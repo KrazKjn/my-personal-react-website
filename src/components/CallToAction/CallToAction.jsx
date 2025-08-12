@@ -1,8 +1,13 @@
 // src/components/CallToAction/CallToAction.js
-import React from 'react';
+import React, { useContext } from 'react';
 import './CallToAction.css'; // Optional styling file
+import { SiteConfigContext } from '../../context/SiteConfigContext';
 
 const CallToAction = () => {
+    const config = useContext(SiteConfigContext);
+
+    if (!config) return null;
+
   return (
     <footer className="call-to-action" id="connect">
       <h2>📬 Let’s Connect & Collaborate</h2>
@@ -11,9 +16,9 @@ const CallToAction = () => {
       </p>
       <p>
         Explore my work on{' '}
-        <a href="https://github.com/KrazKjn" target="_blank" rel="noopener noreferrer">GitHub</a>, connect via{' '}
-        <a href="https://linkedin.com/in/MarkHoganInLa" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or{' '}
-        <a href="mailto:Mark.Hogan.La@outlook.com">email me</a> directly to discuss how we can build systems that empower users and outlast trends.
+        <a href={config.GitHubProfile} target="_blank" rel="noopener noreferrer">GitHub</a>, connect via{' '}
+        <a href={config.LinkedInProfile} target="_blank" rel="noopener noreferrer">LinkedIn</a>, or{' '}
+        <a href={`mailto:${config.ContactEmail}`}>email me</a> directly to discuss how we can build systems that empower users and outlast trends.
       </p>
       <p><em>Let’s create something that matters.</em></p>
     </footer>

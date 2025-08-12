@@ -10,7 +10,7 @@ const ProjectList = ({ projects }) => {
     return (
         <div className="projects-container">
             <h4>Try these Projects ...</h4>
-            <ul>
+            <ul className='custom-list'>
             {projects.map((project, index) => {
             return (
                     <li>

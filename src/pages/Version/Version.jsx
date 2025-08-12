@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Helmet } from 'react-helmet';
 import ResizableBackground from '../../components/ResizableBackground/ResizableBackground';
 import GitHubLink from '../../components/GitHubLink/GitHubLink';
 import DependenciesList from '../../components/DependenciesList/DependenciesList';
+import { SiteConfigContext } from '../../context/SiteConfigContext';
 
 const Version = () => {
+    const config = useContext(SiteConfigContext);
+
+    if (!config) return null;
 
     return (
         <div className="container">
@@ -16,7 +20,7 @@ const Version = () => {
             <h1>Web Site Information</h1>
             <DependenciesList />
             <div>
-                <a href="https://github.com/KrazKjn/my-personal-react-website" target="_blank" rel="noopener noreferrer">
+                <a href={`${config.GitHubProfile}/my-personal-react-website`} target="_blank" rel="noopener noreferrer">
                     View this project on GitHub
                 </a>
             </div>

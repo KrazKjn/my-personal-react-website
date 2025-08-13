@@ -20,7 +20,7 @@ const Version = () => {
             <h1>Web Site Information</h1>
             <DependenciesList />
             <div>
-                <a href={`${config.GitHubProfile}/my-personal-react-website`} target="_blank" rel="noopener noreferrer">
+                <a href={`${config.GitHubProfile}${config.BasePath}`} target="_blank" rel="noopener noreferrer">
                     View this project on GitHub
                 </a>
             </div>

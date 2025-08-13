@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
+import RedirectHandler from './components/RedirectHandler/RedirectHandler';
 import AITraining from './pages/AITraining/AITraining';
 import CurriculumSamples from './pages/CurriculumSamples/CurriculumSamples';
 import ConnectCollaborate from './pages/ConnectCollaborate/ConnectCollaborate';
@@ -24,10 +25,16 @@ import Resumes from './pages/Resumes/Resumes';
 import Software from './pages/Software/Software';
 import Version from './pages/Version/Version';
 import WorkflowModernization from './pages/WorkflowModernization/WorkflowModernization'
+import { SiteConfigContext } from './context/SiteConfigContext';
 
 const App = () => {
+    const config = useContext(SiteConfigContext);
+
+    if (!config) return null;
+
     return (
-        <BrowserRouter basename="/my-personal-react-website">
+        <BrowserRouter basename={config.BasePath}>
+            <RedirectHandler />
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<HomePage />} />

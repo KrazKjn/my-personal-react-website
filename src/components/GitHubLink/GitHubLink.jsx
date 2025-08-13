@@ -7,7 +7,7 @@ const GitHubLink = ({ filePath }) => {
 
     if (!config) return null;
 
-    const baseURL = `${config.GitHubProfile}/my-personal-react-website/blob/main/src`;
+    const baseURL = `${config.GitHubProfile}${config.BasePath}/blob/main/src`;
     const fullURL = `${baseURL}/${filePath}`;
 
     return (

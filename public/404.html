@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/my-personal-react-website/" />
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Extract the full path after the GitHub Pages base
+      var redirectPath = window.location.pathname.replace('/my-personal-react-website', '');
+      // Rewrite the URL to the root with a query param
+      window.location.replace('/my-personal-react-website/?redirect=' + encodeURIComponent(redirectPath));
+    </script>
   </head>
   <body>
-    <p>Redirecting...</p>
+    <p>Redirecting to the correct page...</p>
   </body>
 </html>

@@ -81,6 +81,14 @@
       "link": "https://github.com/KrazKjn/smtp_examples",
       "imageUrl": "/assets/images/SMTP.jfif",
       "imageAlt": "SMTP Examples"
+    },
+    {
+      "id": 9,
+      "name": "Calendar Publisher (Python)",
+      "description": "CSV to ICS creation with subscription-ready output",
+      "link": "https://github.com/KrazKjn/calendar_publisher",
+      "imageUrl": "/assets/images/csv_2_ics.png",
+      "imageAlt": "Python - CSV to ICS"
     }
   ]
   

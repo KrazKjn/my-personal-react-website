@@ -12,7 +12,7 @@ const CallToAction = () => {
     <footer className="call-to-action" id="connect">
       <h2>📬 Let’s Connect & Collaborate</h2>
       <p>
-        Whether you're seeking resilient architecture, high-performance engineering teams, or strategy that scales—I'm always open to meaningful conversations and forward-looking opportunities.
+        Whether you're seeking resilient architecture, high-performance engineering teams, or strategy that scales—<br />I'm always open to meaningful conversations and forward-looking opportunities.
       </p>
       <p>
         Explore my work on{' '}

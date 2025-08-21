@@ -10,6 +10,7 @@ import Contact from './pages/Contact/Contact';
 import HomePage from './pages/Home/HomePage';
 import InfrastructureLegacySystemsEngineeringAddendum from './pages/InfrastructureLegacySystemsEngineeringAddendum/InfrastructureLegacySystemsEngineeringAddendum';
 import ITWorks from './pages/ITWorks/ITWorks'
+import LegacyEngineeringTexaco from './pages/LegacyEngineering/LegacyEngineering'
 import LegacyProfile from './pages/LegacyProfile/LegacyProfile';
 import LegacyProfileDocument from './pages/LegacyProfileDocument/LegacyProfileDocument';
 import MyBlogs from './pages/MyBlogs/MyBlogs';
@@ -45,6 +46,7 @@ const App = () => {
                     <Route path="contact" element={<Contact />} />
                     <Route path="infrastructure-legacy-systems-engineering-addendum" element={<InfrastructureLegacySystemsEngineeringAddendum />} />
                     <Route path="it-works" element={<ITWorks />} />
+                    <Route path="legacy-engineering-texaco" element={<LegacyEngineeringTexaco />} />
                     <Route path="legacy-profile" element={<LegacyProfile />} />
                     <Route path="legacy-profile-document" element={<LegacyProfileDocument />} />
                     <Route path="myblogs" element={<MyBlogs />} />

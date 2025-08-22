@@ -60,6 +60,56 @@
     },
     {
       "id": 6,
+      "name": "IT Works System Management Platform",
+      "description": "Modular, persona-based system management platform for Windows environments, designed to modernize legacy infrastructure and optimize user experience.",
+      "link": "it-works",
+      "imageUrl": "/assets/images/ITWorks.jpg",
+      "imageAlt": "IT Works System Management Platform",
+      "projects": [
+        {
+          "id": 0,
+          "name": "Builder",
+          "description": "Automates full system builds and packaging workflows for enterprise platforms.",
+          "link": "it-works#builder",
+          "imageUrl": "/assets/images/ITWorks_Builder.png",
+          "imageAlt": "Builder Component"
+        },
+        {
+          "id": 1,
+          "name": "Servicer",
+          "description": "Manages refresh cycles and desktop servicing with minimal user disruption.",
+          "link": "it-works#servicer",
+          "imageUrl": "/assets/images/ITWorks_Servicer.png",
+          "imageAlt": "Servicer Component"
+        },
+        {
+          "id": 2,
+          "name": "Manager",
+          "description": "Provides centralized control and visibility across managed systems.",
+          "link": "it-works#manager",
+          "imageUrl": "/assets/images/ITWorks_Manager.png",
+          "imageAlt": "Manager Component"
+        },
+        {
+          "id": 3,
+          "name": "Architecter",
+          "description": "Enables modular infrastructure design and persona-based deployment strategies.",
+          "link": "it-works#architecter",
+          "imageUrl": "/assets/images/ITWorks_Architecter.png",
+          "imageAlt": "Architecter Component"
+        },
+        {
+          "id": 4,
+          "name": "Smart Packaging",
+          "description": "Streamlines application delivery and update workflows with intelligent packaging.",
+          "link": "it-works#smartpackaging",
+          "imageUrl": "/assets/images/ITWorks_SmartPackaging.png",
+          "imageAlt": "Smart Packaging Component"
+        }
+      ]
+    },
+    {
+      "id": 7,
       "name": "Microsoft Entity Framework Examples",
       "description": "Microsoft Entity Framework Examples",
       "link": "https://github.com/KrazKjn/entity_framework_examples",
@@ -67,7 +117,7 @@
       "imageAlt": "Entity Framework Examples"
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Miscellaneous PowerShell Examples",
       "description": "Miscellaneous PowerShell Examples",
       "link": "https://github.com/KrazKjn/powershell_examples",
@@ -75,7 +125,7 @@
       "imageAlt": "PowerShell Examples"
     },
     {
-      "id": 8,
+      "id": 9,
       "name": "Miscellaneous SMTP Examples",
       "description": "Example SMTP PowerShell Scripts",
       "link": "https://github.com/KrazKjn/smtp_examples",

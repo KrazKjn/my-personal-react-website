@@ -17,11 +17,14 @@ const ProjectList = ({ projects }) => {
                     {project.link ? (                    
                         <a href={project.link} target="_blank" rel="noopener noreferrer" title={`Try ${project.name} ...`} >
                         {project.imageUrl ? (
-                            <img
-                            src={(String(project.imageUrl).startsWith('/') ? process.env.PUBLIC_URL : "") + project.imageUrl}
-                            alt={project.imageAlt ?? project.name}
-                            className={`rounded-4 image-url-left-small`}
-                            />
+                            <>
+                                <img
+                                    src={(String(project.imageUrl).startsWith('/') ? process.env.PUBLIC_URL : "") + project.imageUrl}
+                                    alt={project.imageAlt ?? project.name}
+                                    className={`rounded-4 image-url-left-medium`}
+                                />
+                                <TextFormatter textBody={`${project.name} - ${project.description}`} quote={false} />
+                            </>
                         ) : (
                             "View Project"
                         )}
@@ -29,8 +32,8 @@ const ProjectList = ({ projects }) => {
                     ) : (
                         <p>No link provided</p>
                     )}
-                    {project.description && (
-                        <TextFormatter textBody={project.description} quote={false} />
+                    {!project.link && project.description && (
+                        <TextFormatter textBody={`${project.name} - ${project.description}`} quote={false} />
                     )}
                     </li>
             );

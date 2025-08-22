@@ -298,6 +298,14 @@ div {
     position: top
 }
 
+.image-url-left-medium {
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+    height: 75px;
+    position: top
+}
+
 .image-url-left-small {
     float: left;
     margin-right: 10px;

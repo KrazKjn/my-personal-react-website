@@ -16,6 +16,7 @@ import LegacyProfileDocument from './pages/LegacyProfileDocument/LegacyProfileDo
 import MyBlogs from './pages/MyBlogs/MyBlogs';
 import MyProjects from './pages/MyProjects/MyProjects';
 import MyRecommendations from './pages/MyRecommendations/MyRecommendations';
+import NotFoundPage from './pages/NotFound/NotFound';
 import Offerings from './pages/Offerings/Offerings';
 import ProblemSolvingProfile from './pages/ProblemSolvingProfile/ProblemSolvingProfile';
 import ProfessionalSummary from './pages/ProfessionalSummary/ProfessionalSummary';
@@ -62,6 +63,7 @@ const App = () => {
                     <Route path="software" element={<Software />} />
                     <Route path="version" element={<Version />} />
                     <Route path="workflow-modernization" element={<WorkflowModernization />} />
+                    <Route path="*" element={<NotFoundPage />} />
                 </Route>
             </Routes>
         </BrowserRouter>

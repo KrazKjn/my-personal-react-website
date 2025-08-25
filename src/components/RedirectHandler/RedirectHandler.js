@@ -1,16 +1,16 @@
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
-const RedirectHandler = () => {
-  const navigate = useNavigate();
+const RedirectHandler = ({ setRedirectPath }) => {
+  const location = useLocation();
 
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
+    const params = new URLSearchParams(location.search);
     const redirect = params.get('redirect');
     if (redirect) {
-      navigate(redirect, { replace: true });
+      setRedirectPath(redirect);
     }
-  }, [navigate]);
+  }, [location, setRedirectPath]);
 
   return null;
 };

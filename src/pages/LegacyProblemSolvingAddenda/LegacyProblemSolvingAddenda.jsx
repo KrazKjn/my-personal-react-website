@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import GitHubLink from '../../components/GitHubLink/GitHubLink';
 import PdfModal from '../../components/PdfModal/PdfModal';
 import PdfLink from '../../components/PdfLink/PdfLink';

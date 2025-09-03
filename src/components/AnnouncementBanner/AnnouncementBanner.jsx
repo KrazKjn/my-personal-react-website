@@ -1,18 +1,24 @@
 import React, { useCallback, useEffect, useState, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import './AnnouncementBanner.css';
 
 const AnnouncementBanner = ({ href, target }) => {
+  const location = useLocation();
+
   const [items, setItems] = useState([]);
   const [isExpanded, setIsExpanded] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [lastShownTime, setLastShownTime] = useState(new Date());
   const [readyToInitialize, setReadyToInitialize] = useState(false);
+  const [isVisible, setIsVisible] = useState(location.pathname === '/');
 
   const rotationTimerRef = useRef(null);
   const currentIndexRef = useRef(0);
   const lastShownRef = useRef(-1);
   const hasInitializedRef = useRef(false);
   const showSlideMs = 5000;
+
+  console.log(`location.pathname: ${location.pathname} ...`);
 
   const startRotationTimer = useCallback(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' }); // 👈 scrolls to top
@@ -58,7 +64,7 @@ const AnnouncementBanner = ({ href, target }) => {
 
   // Initialize timers once after items are loaded
   useEffect(() => {
-    if (readyToInitialize && !hasInitializedRef.current) {
+    if (readyToInitialize && isVisible && !hasInitializedRef.current) {
       hasInitializedRef.current = true;
 
       let collapseMs = items[0]?.autoCollapseMs ?? 0;
@@ -80,14 +86,20 @@ const AnnouncementBanner = ({ href, target }) => {
     return () => {
       clearInterval(rotationTimerRef.current);
     };
-  }, [items, readyToInitialize, startRotationTimer]);
+  }, [items, readyToInitialize, isVisible, startRotationTimer]);
 
   useEffect(() => {
     console.log('Debug: items updated:', items.length);
-    if (items.length > 1) {
-        setReadyToInitialize(true);
+    console.log('Debug: Is Visible:', isVisible);
+    setReadyToInitialize(items.length > 1 && isVisible);
+  }, [items, isVisible]);
+
+  useEffect(() => {
+    if (!isVisible && isExpanded) {
+      setIsExpanded(false);
+      clearInterval(rotationTimerRef.current);
     }
-  }, [items]);
+  }, [isVisible, isExpanded]);
 
   const formatTime = ms => {
     const totalSeconds = Math.floor(ms / 1000);
@@ -98,6 +110,7 @@ const AnnouncementBanner = ({ href, target }) => {
   };
 
   const toggle = () => {
+    console.log(`Toggling banner. Currently isExpanded: ${isExpanded}`);
     setIsExpanded(prev => {
       const next = !prev;
       if (next && items.length > 1) {
@@ -109,6 +122,7 @@ const AnnouncementBanner = ({ href, target }) => {
       } else {
         clearInterval(rotationTimerRef.current);
       }
+      console.log(`Toggling banner. Setting to: ${next}`);
       return next;
     });
   };
@@ -130,6 +144,8 @@ const AnnouncementBanner = ({ href, target }) => {
   };
 
   const resumeRotation = () => {
+    console.log('Resuming rotation...');
+    setIsVisible(true);
     startRotationTimer(); // ✅ This ensures it actually starts
   };
 

@@ -85,7 +85,9 @@ function levenshtein(a, b) {
 }
 
 function findClosestMatches(input) {
+  console.log(`findClosestMatches: Finding closest matches for: ${input}`);
   const normalizedInput = normalize(input);
+  console.log(`findClosestMatches: Normalized input: ${normalizedInput}`);
 
   // Contains matches (not just prefix)
   const containsMatches = Object.entries(knownRoutes)
@@ -100,10 +102,14 @@ function findClosestMatches(input) {
       path
     }));
 
-  if (containsMatches.length > 0) return containsMatches;
+  if (containsMatches.length > 0) {
+      console.log(`findClosestMatches: Multiple suggestions found: ${containsMatches.map(m => m.title).join(', ')}`);
+      return containsMatches;
+  }
 
+  console.log(`findClosestMatches: Nothing Found`);
   // Levenshtein fallback
-  return Object.entries(knownRoutes)
+  const levenshteinCandidates = Object.entries(knownRoutes)
     .map(([key, path]) => ({
       key,
       path,
@@ -115,6 +121,12 @@ function findClosestMatches(input) {
       title: routeTitles[key] || key,
       path
     }));
+
+  console.log(`findClosestMatches: Levenshtein candidates: ${levenshteinCandidates}`);
+  if (levenshteinCandidates.length > 0) {
+    return levenshteinCandidates;
+  }
+  return [];
 }
 
 function normalizeRedirect(path) {

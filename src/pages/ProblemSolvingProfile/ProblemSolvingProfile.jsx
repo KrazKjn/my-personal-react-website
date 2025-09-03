@@ -34,6 +34,7 @@ const ProblemSolvingProfile = () => {
     });
 
     function removeUnicode(str) {
+      // eslint-disable-next-line no-control-regex
       return str.replace(/[^\x00-\x7F]/g, "");
     }
 

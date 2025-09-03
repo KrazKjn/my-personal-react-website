@@ -33,7 +33,7 @@ function Update-Version {
 
 function Publish-Site {
     Write-Host "Publishing React app..." -ForegroundColor Cyan
-    npm run publish
+    npm run deploy
 }
 
 function Build-Site {

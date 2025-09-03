@@ -15,6 +15,7 @@ const AnnouncementBanner = ({ href, target }) => {
   const showSlideMs = 5000;
 
   const startRotationTimer = useCallback(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // 👈 scrolls to top
     if (rotationTimerRef.current) clearInterval(rotationTimerRef.current);
 
     rotationTimerRef.current = setInterval(() => {

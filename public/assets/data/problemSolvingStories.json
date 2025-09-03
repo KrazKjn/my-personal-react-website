@@ -94,5 +94,29 @@
     "lesson": "Solutions live at the intersection of chemistry, economics, and engineering.",
     "domainTags": ["HVAC", "Chemistry", "Retrofit"],
     "importanceRank": 11
+  },
+  {
+    "title": "🔍 Motiva Enterprises Experion Diagnostic Overlay",
+    "problem": "Operators lacked visibility into Experion faults and system behavior during outages.",
+    "solution": "Built diagnostic overlays with real-time fault mapping and guided recovery paths using historical telemetry.",
+    "lesson": "Transparency empowers operators—diagnostics should speak the language of recovery.",
+    "domainTags": ["SCADA", "Experion", "Diagnostics", "Refinery", "UX Engineering"],
+    "importanceRank": 2
+  },
+  {
+    "title": "🌐 IT Works: Network Stress Testing & Switch Diagnostics",
+    "problem": "Intermittent latency and packet loss across distributed switches during peak load.",
+    "solution": "Designed stress test harnesses and diagnostic dashboards to isolate switch failures and validate firmware resilience.",
+    "lesson": "Visibility isn’t optional—networks need observability baked into every layer.",
+    "domainTags": ["Networking", "Diagnostics", "Automation", "Infrastructure", "IT Works"],
+    "importanceRank": 2
+  },
+  {
+    "title": "🛡️ GDIT & Accruent: Governance-Driven Releases & ITIL-Aligned Change Management",
+    "problem": "Unpredictable deployments and lack of structured change governance led to downtime, rollback confusion, and audit gaps.",
+    "solution": "At GDIT, implemented managed release protocols with contingency-first planning, approval gates, and rollback scripts. At Accruent, utilized the ATCM (Accruent Technical Change Management) process, integrating JIRA, GitHub, and GitFlow to enforce ITIL-aligned development cycles. Tickets required RPN (Risk Priority Number) scoring, full test coverage, and multi-stage approvals before merge.",
+    "lesson": "Change isn’t just technical—it’s procedural. Governance builds trust, and risk scoring turns uncertainty into strategy.",
+    "domainTags": ["Change Management", "Governance", "CI/CD", "ITIL", "Risk Scoring", "GDIT", "Accruent"],
+    "importanceRank": 1
   }
 ]

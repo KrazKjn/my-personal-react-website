@@ -6,6 +6,7 @@ import TextFormatter from '../../components/TextFormatter/TextFormatter';
 import '../../styles/global.css';
 
 const MyRecommendations = () => {
+    const gitHubLinkUrl = 'pages/MyRecommendations/MyRecommendations.jsx';
     const [recommendations, setRecommendations] = useState(null); // Holds recommendation items
     const [error, setError] = useState(null); // For error handling
 
@@ -32,7 +33,7 @@ const MyRecommendations = () => {
     return (
         <div className="container">
             <ResizableBackground />
-            <GitHubLink filePath="pages/MyRecommendations/MyRecommendations.js" />
+            <GitHubLink filePath={gitHubLinkUrl} />
             <Helmet>
                 <title>Mark J. Hogan - My recommendations</title>
             </Helmet>

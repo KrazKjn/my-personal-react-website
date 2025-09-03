@@ -70,6 +70,8 @@ const NavMenu = () => {
                         <ul className="dropdown-menu" aria-labelledby="aboutDropdown">
                             <li><Link className="dropdown-item" to="professional-summary">Professional Summary</Link></li>
                             <li><Link className="dropdown-item" to="problem-solving-profile">Problem Solving Profile</Link></li>
+                            <li><Link className="dropdown-item" to="change-governance">Change Management</Link></li>
+                            <li><Link className="dropdown-item" to="strategic-persona">Strategic Engineering Persona</Link></li>
                             <li><Link className="dropdown-item" to="legacy-profile">Legacy Support</Link></li>
                         </ul>
                     </div>
@@ -128,7 +130,7 @@ const NavMenu = () => {
                         </button>
                         <ul className="dropdown-menu" aria-labelledby="resourcesDropdown">
                             <li><Link className="dropdown-item" to="resumes">Resumes</Link></li>
-                            <li><Link className="dropdown-item" to="legacy-profile-document">PFDs & Addenda</Link></li>
+                            <li><Link className="dropdown-item" to="legacy-problem-solving-addenda">PFDs & Addenda</Link></li>
                             <li><Link className="dropdown-item" to="legacy-engineering-texaco">Legacy Engineering at Texaco</Link></li>
                             <li><Link className="dropdown-item" to="curriculum-samples">Cirriculum Samples</Link></li>
                         </ul>

@@ -5,6 +5,8 @@ import './WorkflowModernization.css'; // Optional scoped styles
 import { SiteConfigContext } from '../../context/SiteConfigContext';
 
 const WorkflowModernization = () => {
+  const gitHubLinkUrl = 'pages/WorkflowModernization/WorkflowModernization.jsx';
+
   useEffect(() => {
     document.title = 'Workflow Modernization';
   }, []);
@@ -15,7 +17,7 @@ const WorkflowModernization = () => {
 
   return (
     <div className="container py-4">
-      <GitHubLink filePath="pages/WorkflowModernization/WorkflowModernization.jsx" />
+      <GitHubLink filePath={gitHubLinkUrl} />
 
       <h1 className="mb-3">⚙️ Workflow Modernization</h1>
       <p className="lead">Streamline operations, reduce overhead, and empower your team.</p>

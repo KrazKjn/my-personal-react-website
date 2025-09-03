@@ -10,7 +10,6 @@ const knownRoutes = {
   "consulting": "consulting",
   "contact": "contact",
   "curriculum-samples": "curriculum-samples",
-  "infrastructure-legacy-systems-engineering-addendum": "infrastructure-legacy-systems-engineering-addendum",
   "it-works": "it-works",
   "itworks": "it-works",
   "legacy-engineering-texaco": "legacy-engineering-texaco",
@@ -35,6 +34,7 @@ const knownRoutes = {
 
 const routeTitles = {
   "ai-training": "AI Training & Workshops",
+  "change-governance": "Change Governance",
   "connect-collaborate": "Connect & Collaborate",
   "consulting": "Consulting Services",
   "contact": "Contact Me",
@@ -55,6 +55,7 @@ const routeTitles = {
   "resume-manager": "Manager Resume",
   "resumes": "All Resumes",
   "software": "Software Portfolio",
+  "strategic-persona": "Strategic Persona",
   "version": "Version Info",
   "workflow-modernization": "Workflow Modernization",
   "home": "Home",

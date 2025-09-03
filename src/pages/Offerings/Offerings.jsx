@@ -4,9 +4,11 @@ import OfferingCard from '../../components/OfferingCard/OfferingCard';
 import './Offerings.css'; // Optional for scoped styles
 
 const Offerings = () => {
+    const gitHubLinkUrl = 'pages/Offerings/Offerings.jsx';
+
     return (
         <div className="container py-4">
-            <GitHubLink filePath="pages/Offerings/Offerings.jsx" />
+            <GitHubLink filePath={gitHubLinkUrl} />
 
             <h1 className="mb-4">Our Offerings</h1>
 

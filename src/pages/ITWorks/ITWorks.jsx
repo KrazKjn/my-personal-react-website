@@ -4,13 +4,15 @@ import CallToAction from '../../components/CallToAction/CallToAction';
 import './ITWorks.css'; // Optional scoped styles
 
 const ITWorks = () => {
+  const gitHubLinkUrl = 'pages/ITWorks/ITWorks.jsx';
+
   useEffect(() => {
     document.title = 'IT Works – A Philosophy of System Management';
   }, []);
 
   return (
     <div className="container py-5">
-      <GitHubLink filePath="pages/ITWorks/ITWorks.jsx" />
+      <GitHubLink filePath={gitHubLinkUrl} />
 
       <h1 className="display-4 mb-4">IT Works</h1>
       <p className="lead">

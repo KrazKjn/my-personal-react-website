@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
+import PdfModal from '../../components/PdfModal/PdfModal';
+import PdfLink from '../../components/PdfLink/PdfLink';
 import GitHubLink from '../../components/GitHubLink/GitHubLink';
 import Accordion from '../../components/Accordion/Accordion';
 import CallToAction from '../../components/CallToAction/CallToAction';
 
 const LegacyProfile = () => {
+    const gitHubLinkUrl = 'pages/LegacyProfile/LegacyProfile.jsx';
+    const pdfModalLegacySysEngTexaco = useRef();
+    
     return (
         <article className="container legacy-profile" role="region" aria-labelledby="legacy-title">
-            <GitHubLink filePath="pages/LegacyProfile/LegacyProfile.jsx" />
+            <GitHubLink filePath={gitHubLinkUrl} />
 
             <h2 id="legacy-title" className="section-title">
                 <svg className="text-primary me-2" width="20" height="20" fill="whitesmoke" viewBox="0 0 16 16">
@@ -72,23 +77,11 @@ const LegacyProfile = () => {
                 </ul>
             </Accordion>
 
-            <iframe
-                src={`${process.env.PUBLIC_URL}/assets/files/2025 - Resume - Legacy Technology.pdf`}
-                className="pdf-viewer"
-                title="Legacy Resume"
-            ></iframe>
-
-            <div className="download-link text-center">
-                <a
-                    className="btn btn-primary"
-                    href={`${process.env.PUBLIC_URL}/assets/files/2025 - Resume - Legacy Technology.pdf`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    📄 Download Legacy Addendum (PDF)
-                </a>
-            </div>
-
+            <PdfLink 
+                filePath="assets/files/2025 - Resume - Legacy Technology.pdf"
+                title="Infrastructure Legacy Systems Engineering Addendum"
+                linkText="📄 Infrastructure Legacy Systems Engineering Addendum (PDF)"
+                pdfModalRef={pdfModalLegacySysEngTexaco} />            
             <p className="mt-4">
                 For more details on the IT Works system management platform, visit the <Link to="/it-works">IT Works page</Link>.
             </p>
@@ -99,6 +92,7 @@ const LegacyProfile = () => {
                 buttonText="Contact Me"
                 buttonLink="mailto:mark@yourdomain.com?subject=Legacy%20Systems%20Inquiry"
             />
+            <PdfModal ref={pdfModalLegacySysEngTexaco} modalSize="max-width: 900px;" />
         </article>
     );
 };

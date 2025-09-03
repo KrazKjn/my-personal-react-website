@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import './styles/global.css';
+import './styles/SharedCard.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { SiteConfigProvider } from './context/SiteConfigContext';

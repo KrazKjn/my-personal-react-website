@@ -5,6 +5,7 @@ import GitHubLink from '../../components/GitHubLink/GitHubLink';
 import { SiteConfigContext } from '../../context/SiteConfigContext';
 
 const Contact = () => {
+    const gitHubLinkUrl = 'pages/Contact/Contact.jsx';
     const config = useContext(SiteConfigContext);
 
     if (!config) return null;
@@ -12,7 +13,7 @@ const Contact = () => {
     return (
         <div className="container">
             <ResizableBackground />
-            <GitHubLink filePath="pages/Contact/Contact.js" />
+            <GitHubLink filePath={gitHubLinkUrl} />
             <Helmet>
                 <title>Mark J. Hogan - Contact</title>
             </Helmet>

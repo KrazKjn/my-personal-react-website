@@ -3,13 +3,15 @@ import GitHubLink from '../../components/GitHubLink/GitHubLink';
 import './CurriculumSamples.css'; // Optional scoped styles
 
 const CurriculumSamples = () => {
+  const gitHubLinkUrl = 'pages/CurriculumSamples/CurriculumSamples.jsx';
+
   useEffect(() => {
     document.title = 'AI Curriculum Samples';
   }, []);
 
   return (
     <div className="container py-4">
-      <GitHubLink filePath="pages/CurriculumSamples/CurriculumSamples.jsx" />
+      <GitHubLink filePath={gitHubLinkUrl} />
 
       <div className="alert alert-warning text-center mt-3 mb-4">
         <strong>🚧 This page is a draft and currently in development.</strong> Content may change as services evolve.

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import './OfferingCard.css'; // Optional for scoped styles
+//import './OfferingCard.css'; // Optional for scoped styles
 
 const OfferingCard = ({ Title, Description, IconClass, LearnMoreLink }) => {
     return (

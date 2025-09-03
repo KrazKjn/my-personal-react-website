@@ -7,6 +7,7 @@ import ProjectList from '../../components/ProjectList/ProjectList';
 import '../../styles/global.css';
 
 const MyProjects = () => {
+    const gitHubLinkUrl = 'pages/MyProjects/MyProjects.jsx';
     const [projects, setProjects] = useState(null); // Holds the project items
     const [error, setError] = useState(null); // For error handling
 
@@ -33,7 +34,7 @@ const MyProjects = () => {
     return (
         <div className="container">
             <ResizableBackground />
-            <GitHubLink filePath="pages/MyProjects/MyProjects.js" />
+            <GitHubLink filePath={gitHubLinkUrl} />
             <Helmet>
                 <title>Mark J. Hogan - My Projects</title>
             </Helmet>

@@ -4,9 +4,11 @@ import CallToAction from '../../components/CallToAction/CallToAction';
 import './ConnectCollaborate.css'; // Optional for scoped styles
 
 const ConnectCollaborate = () => {
+    const gitHubLinkUrl = 'pages/ConnectCollaborate/ConnectCollaborate.jsx';
+
     return (
         <div className="container">
-            <GitHubLink filePath="pages/ConnectCollaborate/ConnectCollaborate.jsx" />
+            <GitHubLink filePath={gitHubLinkUrl} />
             <CallToAction />
         </div>
     );

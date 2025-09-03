@@ -2,7 +2,7 @@ import React from 'react';
 import GitHubLink from '../../components/GitHubLink/GitHubLink';
 
 function LegacyEngineeringTexaco() {
-  const gitHubLinkUrl = 'pages/LegacyEngineering/LegacyEngineering.jsx'; // Replace with actual URL
+  const gitHubLinkUrl = 'pages/LegacyEngineering/LegacyEngineering.jsx';
 
   return (
     <div className="container py-4">

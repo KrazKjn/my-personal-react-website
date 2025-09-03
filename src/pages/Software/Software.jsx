@@ -4,6 +4,8 @@ import './Software.css'; // Optional scoped styles
 import { SiteConfigContext } from '../../context/SiteConfigContext';
 
 const Software = () => {
+  const gitHubLinkUrl = 'pages/Software/Software.jsx';
+
   useEffect(() => {
     document.title = 'Software Engineering & Automation';
   }, []);
@@ -14,7 +16,7 @@ const Software = () => {
 
   return (
     <div className="container py-4">
-      <GitHubLink filePath="pages/Software/Software.jsx" />
+      <GitHubLink filePath={gitHubLinkUrl} />
 
       <h1 className="mb-3">🖥 Software Engineering & Automation</h1>
       <p className="lead">Smart solutions, built for scale and clarity.</p>

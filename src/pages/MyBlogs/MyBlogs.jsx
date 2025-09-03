@@ -6,6 +6,7 @@ import TextFormatter from '../../components/TextFormatter/TextFormatter';
 import '../../styles/global.css';
 
 const MyBlogs = () => {
+    const gitHubLinkUrl = 'pages/MyBlogs/MyBlogs.jsx';
     const [items, setItems] = useState(null); // To store blog posts
     const [error, setError] = useState(null); // To handle errors
 
@@ -32,7 +33,7 @@ const MyBlogs = () => {
     return (
         <div className="container">
             <ResizableBackground />
-            <GitHubLink filePath="pages/MyBlogs/MyBlogs.js" />
+            <GitHubLink filePath={gitHubLinkUrl} />
             <Helmet>
                 <title>Mark J. Hogan - My Blogs</title>
             </Helmet>

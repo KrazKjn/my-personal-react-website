@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import AnnouncementBanner from '../AnnouncementBanner/AnnouncementBanner';
 import Header from './Header/Header';
 //import Sidebar from './Sidebar/Sidebar';
 import NavMenu from './NavMenu/NavMenu';
@@ -13,9 +14,7 @@ const Layout = () => {
             </div>
 
             <main>
-                <div className="top-row px-4">
-                    <a href="https://react.dev/" target="_blank" rel="noreferrer">About React</a>
-                </div>
+                <AnnouncementBanner href="https://react.dev/" target="About React ..." />
                 <Header />
 
                 <article className="content px-4">

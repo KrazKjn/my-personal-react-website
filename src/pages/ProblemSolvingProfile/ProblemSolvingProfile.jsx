@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import PdfModal from '../../components/PdfModal/PdfModal';
+import PdfLink from '../../components/PdfLink/PdfLink';
 import GitHubLink from '../../components/GitHubLink/GitHubLink';
 
 const ProblemSolvingProfile = () => {
     const [allStories, setAllStories] = useState([]);
     const [sortOrder, setSortOrder] = useState('importance');
+    const pdfModalProblemSolvingPortfolio = useRef();    
 
     useEffect(() => {
         const fetchStories = async () => {
@@ -80,22 +83,13 @@ const ProblemSolvingProfile = () => {
                 <p className="text-center text-muted">Loading stories or no data available...</p>
             )}
 
-            <iframe
-                src={`${process.env.PUBLIC_URL}/assets/files/2025 - Resume - Problem Solving Portfolio.pdf`}
-                className="pdf-viewer"
-                title="Problem Solving Portfolio"
-            ></iframe>
+            <PdfLink 
+                filePath={`${process.env.PUBLIC_URL}/assets/files/2025 - Resume - Problem Solving Portfolio.pdf`}
+                title="Problem Solving Portfolio (PDF)"
+                linkText="📄 Problem Solving Portfolio (PDF)"
+                pdfModalRef={pdfModalProblemSolvingPortfolio} />            
 
-            <div className="download-link text-center mt-4">
-                <a
-                    className="btn btn-primary"
-                    href={`${process.env.PUBLIC_URL}/assets/files/2025 - Resume - Problem Solving Portfolio.pdf`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    📄 Download Problem Solving Portfolio (PDF)
-                </a>
-            </div>
+            <PdfModal ref={pdfModalProblemSolvingPortfolio} modalSize="max-width: 900px;" />
         </div>
     );
 };

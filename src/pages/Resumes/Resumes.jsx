@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import ResizableBackground from '../../components/ResizableBackground/ResizableBackground';
+import PdfModal from '../../components/PdfModal/PdfModal';
+import PdfLink from '../../components/PdfLink/PdfLink';
 import GitHubLink from '../../components/GitHubLink/GitHubLink';
 import '../../styles/global.css';
 
 const Resumes = () => {
+    const gitHubLinkUrl = 'pages/Resumes/Resumes.jsx';
+    const pdfModalEngineerResume = useRef();
+    const pdfModalArchitectResume = useRef();
+    const pdfModalManagerResume = useRef();
+    const pdfModalLegacySysEngTexaco = useRef();
+
     return (
         <div className="container">
             <ResizableBackground />
-            <GitHubLink filePath="pages/Resumes/Resumes.js" />
+            <GitHubLink filePath={gitHubLinkUrl} />
             <Helmet>
                 <title>Mark J. Hogan - My Resumes</title>
             </Helmet>
@@ -17,26 +25,38 @@ const Resumes = () => {
             <p>Select a resume to view:</p>
             <ul className='custom-list'>
                 <li>
-                    <Link className="nav-link" to="/resume-engineer">
-                        <span className="bi bi-journal-text-nav-menu" aria-hidden="true"></span> Engineer Resume
-                    </Link>
+                    <PdfLink 
+                        filePath="assets/files/2025 - Resume - Engineer - Full.pdf"
+                        title="Engineer Resume"
+                        linkText="📄 Engineer Resume (PDF)"
+                        pdfModalRef={pdfModalEngineerResume} />
                 </li>
                 <li>
-                    <Link className="nav-link" to="/resume-architect">
-                        <span className="bi bi-journal-text-nav-menu" aria-hidden="true"></span> Architect Resume
-                    </Link>
+                    <PdfLink 
+                        filePath="assets/files/2025 - Resume - Architect - Full.pdf"
+                        title="Architect Resume"
+                        linkText="📄 Architect Resume (PDF)"
+                        pdfModalRef={pdfModalArchitectResume} />
                 </li>
                 <li>
-                    <Link className="nav-link" to="/resume-manager">
-                        <span className="bi bi-journal-text-nav-menu" aria-hidden="true"></span> Manager Resume
-                    </Link>
+                    <PdfLink 
+                        filePath="assets/files/2025 - Resume - Manager - Full.pdf"
+                        title="Manager Resume"
+                        linkText="📄 Manager Resume (PDF)"
+                        pdfModalRef={pdfModalManagerResume} />
                 </li>
                 <li>
-                    <Link className="nav-link" to="/infrastructure-legacy-systems-engineering-addendum">
-                        <span className="bi bi-journal-text-nav-menu" aria-hidden="true"></span> Infrastructure Legacy Systems Engineering Addendum
-                    </Link>
+                    <PdfLink 
+                        filePath="assets/files/2025 - Resume - Legacy Technology.pdf"
+                        title="Infrastructure Legacy Systems Engineering Addendum"
+                        linkText="📄 Infrastructure Legacy Systems Engineering Addendum (PDF)"
+                        pdfModalRef={pdfModalLegacySysEngTexaco} />            
                 </li>
             </ul>
+            <PdfModal ref={pdfModalEngineerResume} modalSize="max-width: 900px;" />
+            <PdfModal ref={pdfModalArchitectResume} modalSize="max-width: 900px;" />
+            <PdfModal ref={pdfModalManagerResume} modalSize="max-width: 900px;" />
+            <PdfModal ref={pdfModalLegacySysEngTexaco} modalSize="max-width: 900px;" />
         </div>
     );
 };

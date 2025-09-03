@@ -6,6 +6,7 @@ import DependenciesList from '../../components/DependenciesList/DependenciesList
 import { SiteConfigContext } from '../../context/SiteConfigContext';
 
 const Version = () => {
+    const gitHubLinkUrl = 'pages/Version/Version.jsx';
     const config = useContext(SiteConfigContext);
 
     if (!config) return null;
@@ -13,7 +14,7 @@ const Version = () => {
     return (
         <div className="container">
             <ResizableBackground />
-            <GitHubLink filePath="pages/Version/Version.js" />
+            <GitHubLink filePath={gitHubLinkUrl} />
             <Helmet>
                 <title>Mark J. Hogan - Web Site Information</title>
             </Helmet>

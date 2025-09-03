@@ -8,6 +8,7 @@ import { SiteConfigContext } from '../../context/SiteConfigContext';
 import '../../styles/global.css';
 
 const HomePage = () => {
+    const gitHubLinkUrl = 'pages/Home/HomePage.jsx';
     const config = useContext(SiteConfigContext);
 
     if (!config) return null;
@@ -19,10 +20,10 @@ const HomePage = () => {
             </Helmet>
             
             <ResizableBackground />
-            <GitHubLink filePath="pages/Home/HomePage.js" />
+            <GitHubLink filePath={gitHubLinkUrl} />
 
             <h1>Mark J. Hogan — Manager. Architect. Developer. Educator. Strategist.<br />
-                <small class="text-info">Empowering small businesses through modern AI education, consulting, and workflow design.</small>
+                <small className="text-info">Empowering small businesses through modern AI education, consulting, and workflow design.</small>
             </h1>
 
             <Link className="btn btn-primary btn-lg mt-3" to="/offerings">
@@ -73,7 +74,7 @@ const HomePage = () => {
                 <div className="alert alert-success mt-4" role="alert">
                     <h4 className="alert-heading">🚀 AI Training & Services for Small Business</h4>
                     <p>Curious about AI but overwhelmed by jargon? <strong>Now offering hands-on AI education and consulting for small businesses!</strong></p>
-                    <a class="btn btn-primary mt-2" href="ai-training">Learn More & Book for Fall 2025</a>
+                    <a className="btn btn-primary mt-2" href="ai-training">Learn More & Book for Fall 2025</a>
                 </div>
             </div>
         </div>

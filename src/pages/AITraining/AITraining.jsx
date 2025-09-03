@@ -4,13 +4,14 @@ import GitHubLink from '../../components/GitHubLink/GitHubLink';
 import { SiteConfigContext } from '../../context/SiteConfigContext';
 
 const AITraining = () => {
+    const gitHubLinkUrl = 'pages/AITraining/AITraining.jsx';
     const config = useContext(SiteConfigContext);
 
     if (!config) return null;
 
     return (
         <div className="container">
-            <GitHubLink filePath="pages/AITraining/AITraining.jsx" />
+            <GitHubLink filePath={gitHubLinkUrl} />
 
             <h1>🚀 Modern Solutions for Small Business: AI That Works for You</h1>
 

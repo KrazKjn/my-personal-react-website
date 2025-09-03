@@ -4,13 +4,14 @@ import './Consulting.css'; // Optional for scoped styles
 import { SiteConfigContext } from '../../context/SiteConfigContext';
 
 const Consulting = () => {
+    const gitHubLinkUrl = 'pages/Consulting/Consulting.jsx';
     const config = useContext(SiteConfigContext);
 
     if (!config) return null;
 
     return (
         <div className="container py-4">
-            <GitHubLink filePath="pages/Consulting/Consulting.jsx" />
+            <GitHubLink filePath={gitHubLinkUrl} />
 
             <h1 className="mb-3">🔧 Consulting Services</h1>
             <p className="lead">Partnering with teams to solve hard problems with clarity and precision.</p>

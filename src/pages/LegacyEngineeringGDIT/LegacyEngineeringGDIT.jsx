@@ -5,7 +5,7 @@ import GitHubLink from '../../components/GitHubLink/GitHubLink';
 
 function LegacyEngineeringGDIT() {
   const gitHubLinkUrl = 'pages/LegacyEngineeringGDIT/LegacyEngineeringGDIT.jsx';
-  const pdfModalSysEngGDITPDF = useRef();
+  const pdfModalSysEngPDF = useRef();
 
   return (
     <div className="container py-4">
@@ -25,9 +25,10 @@ function LegacyEngineeringGDIT() {
           filePath={`${process.env.PUBLIC_URL}/assets/files/2025 - Strategic Release Engineering GDIT.pdf`}
           title="Strategic Release Engineering at GDIT"
           linkText="📄 Strategic Release Engineering at GDIT (PDF)"
-          pdfModalRef={pdfModalSysEngGDITPDF} />            
+          pdfModalRef={pdfModalSysEngPDF} />            
 
-      <PdfModal ref={pdfModalSysEngGDITPDF} modalSize="max-width: 900px;" />
+      <PdfModal ref={pdfModalSysEngPDF} modalSize="max-width: 900px;" />
+
       <div className="download-link mt-2">
         <a
           className="btn btn-primary"

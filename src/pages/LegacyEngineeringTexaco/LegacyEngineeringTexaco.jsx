@@ -5,7 +5,7 @@ import GitHubLink from '../../components/GitHubLink/GitHubLink';
 
 function LegacyEngineeringTexaco() {
   const gitHubLinkUrl = 'pages/LegacyEngineeringTexaco/LegacyEngineeringTexaco.jsx';
-  const pdfModalSysEngTexacoPDF = useRef();
+  const pdfModalSysEngPDF = useRef();
 
   return (
     <div className="container py-4">
@@ -25,9 +25,9 @@ function LegacyEngineeringTexaco() {
           filePath={`${process.env.PUBLIC_URL}/assets/files/2025 - Strategic Systems Engineering Texaco.pdf`}
           title="Strategic Systems Engineering Texaco (PDF)"
           linkText="📄 Strategic Systems Engineering Texaco (PDF)"
-          pdfModalRef={pdfModalSysEngTexacoPDF} />            
+          pdfModalRef={pdfModalSysEngPDF} />            
 
-      <PdfModal ref={pdfModalSysEngTexacoPDF} modalSize="max-width: 900px;" />
+      <PdfModal ref={pdfModalSysEngPDF} modalSize="max-width: 900px;" />
 
       <div className="download-link mt-2">
         <a

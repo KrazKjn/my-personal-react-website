@@ -38,6 +38,14 @@
       "linkText": "Engineering Persona",
       "linkTarget": "strategic-persona",
       "autoCollapseMs": 15000
+    },
+    {
+      "id": 6,
+      "title": "Strategic Release Engineering at General Dynamics IT",
+      "message": "This archive highlights a series of internal tooling and automation breakthroughs from my time at General Dynamics IT—where I architected systems that streamlined enterprise releases, normalized time tracking, and automated geospatial deployments.",
+      "linkText": "Legacy Engineering at General Dynamics IT",
+      "linkTarget": "legacy-engineering-gdit",
+      "autoCollapseMs": 15000
     }
 ]
   

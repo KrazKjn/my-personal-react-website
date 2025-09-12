@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import PdfModal from '../../components/PdfModal/PdfModal';
+import PdfLink from '../../components/PdfLink/PdfLink';
 import GitHubLink from '../../components/GitHubLink/GitHubLink';
 
 function LegacyEngineeringTexaco() {
-  const gitHubLinkUrl = 'pages/LegacyEngineering/LegacyEngineering.jsx';
+  const gitHubLinkUrl = 'pages/LegacyEngineeringTexaco/LegacyEngineeringTexaco.jsx';
+  const pdfModalSysEngTexacoPDF = useRef();
 
   return (
     <div className="container py-4">
@@ -18,16 +21,13 @@ function LegacyEngineeringTexaco() {
         Each solution reflects a mindset of strategic reuse, operational resilience, and technical empathy. From restoring telemetry across decommissioned systems to building a live management console for domain oversight, these stories demonstrate the depth and clarity I bring to every challenge.
       </p>
 
-      <div className="download-link">
-        <a
-          className="btn btn-primary"
-          href={`${process.env.PUBLIC_URL}/assets/files/2025 - Strategic Systems Engineering Texaco.pdf`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          📄 Download the full Article (PDF)
-        </a>
-      </div>
+      <PdfLink 
+          filePath={`${process.env.PUBLIC_URL}/assets/files/2025 - Strategic Systems Engineering Texaco.pdf`}
+          title="Strategic Systems Engineering Texaco (PDF)"
+          linkText="📄 Strategic Systems Engineering Texaco (PDF)"
+          pdfModalRef={pdfModalSysEngTexacoPDF} />            
+
+      <PdfModal ref={pdfModalSysEngTexacoPDF} modalSize="max-width: 900px;" />
 
       <div className="download-link mt-2">
         <a

@@ -131,6 +131,7 @@ const NavMenu = () => {
                         <ul className="dropdown-menu" aria-labelledby="resourcesDropdown">
                             <li><Link className="dropdown-item" to="resumes">Resumes</Link></li>
                             <li><Link className="dropdown-item" to="legacy-problem-solving-addenda">PFDs & Addenda</Link></li>
+                            <li><Link className="dropdown-item" to="legacy-engineering-gdit">Legacy Engineering at GDIT</Link></li>
                             <li><Link className="dropdown-item" to="legacy-engineering-texaco">Legacy Engineering at Texaco</Link></li>
                             <li><Link className="dropdown-item" to="curriculum-samples">Cirriculum Samples</Link></li>
                         </ul>

@@ -74,7 +74,7 @@ const HomePage = () => {
                 <div className="alert alert-success mt-4" role="alert">
                     <h4 className="alert-heading">🚀 AI Training & Services for Small Business</h4>
                     <p>Curious about AI but overwhelmed by jargon? <strong>Now offering hands-on AI education and consulting for small businesses!</strong></p>
-                    <a className="btn btn-primary mt-2" href="ai-training">Learn More & Book for Fall 2025</a>
+                    <a className="btn btn-primary mt-2" href="ai-training">Learn More & Book for 2026</a>
                 </div>
             </div>
         </div>

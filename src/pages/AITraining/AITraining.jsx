@@ -45,7 +45,7 @@ const AITraining = () => {
             </p>
 
             <div className="alert alert-info mt-4 mb-4">
-                <strong>🗓 Now booking Fall 2025 engagements.</strong>
+                <strong>🗓 Now booking 2026 engagements.</strong>
             </div>
 
             <p>
